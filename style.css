@@ -338,3 +338,161 @@ footer {
     transform: translate(0) translate(-50%, -50%);
   }
 }
+
+@media only screen and (max-width: 1690px) {
+  .main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .container-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 850px;
+    justify-items: center;
+    perspective: 1000px;
+    justify-content: center;
+  }
+  .card {
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    transform: scale(1);
+  }
+  .card:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+  }
+  .head-cat {
+    background-color: ivory;
+    position: absolute;
+    border-radius: 50%;
+    width: 75%;
+    height: 70%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 20px;
+  }
+  .head__eye {
+    background-color: black;
+    border-radius: 50%;
+    width: 10px;
+    height: 15px;
+    position: absolute;
+    top: 40px;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes blink {
+    0% {
+      height: 15px;
+    }
+    5% {
+      transform: translate(0px, 5px);
+      height: 1px;
+    }
+    10% {
+      transform: translate(0px, 0px);
+      height: 15px;
+    }
+  }
+  .head__eye--left {
+    left: 32px;
+  }
+
+  .head__eye--right {
+    right: 32px;
+  }
+  .oreja-izq-ext {
+    background-color: ivory;
+    border-radius: 0 90% 0 0;
+    width: 30px;
+    height: 35px;
+    position: absolute;
+    left: 30px;
+    top: 15px;
+  }
+
+  .oreja-der-ext {
+    background-color: ivory;
+    border-radius: 100px 0 0 0;
+    width: 30px;
+    height: 35px;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+  }
+
+  .nose {
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    background-color: black;
+    border-radius: 5px 5px 60% 60%;
+    top: 60%;
+    right: 45%;
+  }
+
+  .bigote.derecha {
+    height: 2px;
+    width: 40px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(125, 125, 125, 1) 24%,
+      rgba(193, 193, 193, 1) 38%,
+      rgba(255, 255, 255, 1) 70%
+    );
+    position: absolute;
+  }
+
+  .bigote.izquierda {
+    height: 2px;
+    width: 40px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(125, 125, 125, 1) 24%,
+      rgba(193, 193, 193, 1) 38%,
+      rgba(255, 255, 255, 1) 70%
+    );
+    position: absolute;
+  }
+  .bigotes {
+    position: absolute;
+  }
+  .bigotes-der {
+    left: 0px;
+    bottom: 40px;
+  }
+  .bigotes-izq {
+    left: 73px;
+    bottom: 40px;
+  }
+  .izquierda {
+    transform-origin: top left;
+  }
+  .derecha {
+    transform-origin: top right;
+  }
+
+  .pos-1 {
+    transform: rotate(-20deg);
+  }
+  .pos-2 {
+    transform: rotate(0deg);
+  }
+  .pos-3 {
+    transform: rotate(20deg);
+  }
+}
