@@ -49,11 +49,16 @@ h1 {
   border-radius: 5px;
   width: 220px;
   height: 220px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 0.8s ease;
+  -webkit-transform: scale(1);
   transform-style: preserve-3d;
   transition: all 0.8s ease;
   transform: scale(1);
 }
 .card:active {
+  -webkit-transform: scale(0.97);
+  -webkit-transition: transform 0.2s;
   transform: scale(0.97);
   transition: transform 0.2s;
 }
@@ -83,6 +88,7 @@ h1 {
   animation-name: blink;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  backface-visibility: hidden;
 }
 
 @keyframes blink {
@@ -133,6 +139,7 @@ h1 {
   border-radius: 5px 5px 60% 60%;
   top: 70px;
   right: 65px;
+  backface-visibility: hidden;
 }
 
 .bigote.derecha {
@@ -241,7 +248,7 @@ h1 {
 .btn-neon:hover {
   background-color: #c850c0;
   box-shadow: 0 0 10px #c850c0, 0 0 40px #c850c0, 0 0 80px #c850c0;
-  transition-delay: 0.5s;
+  transition-delay: 0.1s;
   color: #fff;
 }
 .btn-neon span {
