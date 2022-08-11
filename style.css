@@ -501,14 +501,18 @@ footer {
 @media only screen and (max-width: 600px) {
   .main {
     max-width: 600px;
-  }
-  .container-card {
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-    gap: 4px;
+    justify-content: space-around;
+  }
+  .container-card {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-items: center;
     perspective: 1000px;
     justify-content: center;
+    margin: 3px;
   }
   .card {
     position: relative;
@@ -517,7 +521,7 @@ footer {
     border-radius: 5px;
     width: 150px;
     height: 150px;
-    margin: 0;
+    margin: 4px;
     transform-style: preserve-3d;
     transition: all 0.8s ease;
     transform: scale(1);
