@@ -58,6 +58,7 @@ h1 {
   transition: transform 0.2s;
 }
 .card.flip {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
