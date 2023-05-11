@@ -1,4 +1,4 @@
-# Memory Match
+# Memory Cat
 
 Memory Cat es un proyecto de un sitio web del juego Memory Match, el jugador se puede jugar solo, en su navegador.
 El juego Memory Martch es un juego de cartas en el que todas las cartas se ponen cara abajo sobre una superficie y se le dan la vuelta a dos cartas en cada turno.
@@ -9,13 +9,13 @@ El objetivo del juego es destapar parejas de cartas que coincidan. Una vez esten
 1. Clonar repositorio
 
 ```
-git clone https://github.com/Gatamara/memory-cat.git
+git clone https://github.com/gatamara/memory-cat.git
 ```
 
 2. Navegar a la carpeta del proyecto
 
 ```
-cd memory-car-main
+cd memory-cat
 ```
 
 3. Abrir con Visual Studio Code
